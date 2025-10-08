@@ -658,11 +658,15 @@
   showybox(
     ..if show-title {
       (
-        title: [#text(fill: colors.boxes.aside.title)[_Aside_ #context {
+        title: [
+          #in-box.update(true)
+          #text(fill: colors.boxes.aside.title)[_Aside_ #context {
             let section = counter(heading).get().first()
             let aside-num = counter("aside").display()
             [#section.#aside-num]
-          }: #title]],
+          }: #title]
+          #in-box.update(false)  
+        ],
       )
     },
     body-style: (color: colors.boxes.aside.text),
