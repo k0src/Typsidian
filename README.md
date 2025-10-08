@@ -28,6 +28,24 @@ _Left: `theme: "dark"`, Right: `theme: "light"`_
 - `show-italic-color` - Whether to show italic text color (default: true)
 - `standalone` - True for standalone documents, false for use with my [Typst for Obsidian plugin](https://github.com/k0src/Typst-for-Obsidian)
 
+## Functions
+
+- `make-title(show-outline: true, show-underline: true, centered: true)`:
+  - Generates the title page.
+  - `show-outline` - Whether to show the outline around the title box (default: true)
+  - `show-underline` - Whether to show the underline below the title (default: true)
+  - `centered` - Whether to center the title box vertically on the page (default: true)
+- `bbox(title, body, show-title: true)`:
+  - Creates a plain boxed section with an optional title.
+  - `title` - Title of the box
+  - `body` - Content of the box
+  - `show-title` - Whether to show the title (default: true)
+- `info(title, body, show-title: true)`, `important(title, body, show-title: true)`, `example(title, body, show-title: true)`, `aside(title, body, show-title: true)`:
+  - Creates a colored boxed section with an icon and an optional title.
+  - `title` - Title of the box
+  - `body` - Content of the box
+  - `show-title` - Whether to show the title (default: true)
+
 ## Usage
 
 ### As Standalone Template
