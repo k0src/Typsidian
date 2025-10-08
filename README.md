@@ -101,3 +101,7 @@ _Left: `theme: "dark"`, Right: `theme: "light"`_
 - [showybox](https://typst.app/universe/package/showybox)
 - [glossarium](https://typst.app/universe/package/glossarium/)
 - [fontawesome](https://typst.app/universe/package/fontawesome)
+
+## License
+
+[MIT License](./LICENSE)
