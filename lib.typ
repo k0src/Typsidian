@@ -4,7 +4,6 @@
 #import "@preview/glossarium:0.5.9": gls, glspl, make-glossary, print-glossary, register-glossary
 #import "@preview/fontawesome:0.6.0": *
 
-
 // Typsidian - Template for Typst for Obsidian plugin: https://github.com/k0src/Typst-for-Obsidian
 // Required fonts: Inter 24pt, GeistMono NFP, Fira Math
 // https://fonts.google.com/specimen/Inter

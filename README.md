@@ -32,7 +32,7 @@ _Left: `theme: "dark"`, Right: `theme: "light"`_
 
 ### As Standalone Template
 
-1. Copy `template.typ` to your project directory.
+1. Clone the repository to your project directory or to the `{data-dir}`.
 2. Create a new Typst file and import the template with desired options:
 
 ```typst
@@ -48,11 +48,17 @@ _Left: `theme: "dark"`, Right: `theme: "light"`_
 ### With Typst for Obsidian Plugin
 
 1. Install the [Typst for Obsidian plugin](https://github.com/k0src/Typst-for-Obsidian)
-2. Copy `template.typ` to your Obsidian vault.
+2. Clone the repository to `{data-dir}/typst/packages/local/typsidian/0.0.1`
+
+- `{data-dir}` is:
+  - Windows: `%APPDATA%`
+  - macOS: `~/Library/Application Support`
+  - Linux: `$XDG_DATA_HOME` or `~/.local/share`
+
 3. Create a new Typst file in Obsidian and import the template with desired options:
 
 ```typst
-#import "template.typ": *
+#import "@local/typsidian:0.0.1": *
 #show: typsidian.with(theme: "dark", title: "My Document", course: "CS4999", standalone: false)
 ```
 
@@ -63,6 +69,14 @@ _Left: `theme: "dark"`, Right: `theme: "light"`_
 > When using with the Typst for Obsidian plugin, set `standalone: false`, and remove the default layout function for best results.
 
 ## Dependencies
+
+### Fonts
+
+- [Inter 24pt](https://fonts.google.com/specimen/Inter)
+- [GeistMono NFP](https://github.com/ryanoasis/nerd-fonts/releases/)
+- [Fira Math](https://github.com/firamath/firamath/releases/)
+
+### Packages
 
 - [zebraw](https://typst.app/universe/package/zebraw)
 - [itemize](https://typst.app/universe/package/itemize)
