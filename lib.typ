@@ -390,6 +390,7 @@
     },
   ) if standalone
 
+
   // Glossary
   if show-index {
     show: make-glossary
