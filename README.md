@@ -53,16 +53,13 @@ _Left: `theme: "dark"`, Right: `theme: "light"`_
   - `show-outline` - Whether to show the outline around the title box (default: true)
   - `show-underline` - Whether to show the underline below the title (default: true)
   - `centered` - Whether to center the title box vertically on the page (default: true)
-- `bbox(title, body, show-title: true)`:
-  - Creates a plain boxed section with an optional title.
-  - `title` - Title of the box
-  - `body` - Content of the box
-  - `show-title` - Whether to show the title (default: true)
-- `info(title, body, show-title: true)`, `important(title, body, show-title: true)`, `example(title, body, show-title: true)`, `aside(title, body, show-title: true)`:
-  - Creates a colored boxed section with an icon and an optional title.
-  - `title` - Title of the box
-  - `body` - Content of the box
-  - `show-title` - Whether to show the title (default: true)
+- `box(theme: "basic", title: none, breakable: false, body, box-radius: 0.25em)`:
+  - Creates a styled box.
+  - `theme` - Box theme: `info`, `important`, `example`, `aside`, `frame`, `theorem` or `basic` (default: `basic`)
+  - `title` - Optional title for the box (default: none)
+  - `breakable` - Whether the box can break across pages (default: false)
+  - `body` - Box content
+  - `box-radius` - Border radius for the box (default: 0.25em)
 
 ### With Typst for Obsidian Plugin
 
