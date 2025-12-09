@@ -1,7 +1,7 @@
-#import "@preview/typsidian:0.0.1": *
+#import "@preview/typsidian:0.0.2": *
 
 #show: typsidian.with(
-  theme: "dark", 
+  theme: "light", 
   title: "Lorem Ipsum", 
   course: "CS4999",
   show-index: true,
@@ -77,7 +77,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 - Sum rule: $O(f(n)) + O(g(n)) = O(max(f(n), g(n)))$
 - Product rule: $O(f(n)) dot O(g(n)) = O(f(n) dot g(n))$
 
-#info("Complexity Classes", [
+#box(theme: "info", title: "Complexity Classes", [
   Pellentesque habitant morbi tristique senesque et netus et malesuada fames ac turpis egestas. Common complexity classes include:
   - $P$: Problems solvable in polynomial time
   - $"NP"$: Problems verifiable in polynomial time
@@ -105,7 +105,7 @@ def binary_search(arr, target):
   return -1
 ```
 
-#important("Time Complexity Analysis", [
+#box(theme: "important", title: "Time Complexity Analysis", [
   Mauris blandit aliquet elit, at hendrerit urna semper vel. Binary search achieves $O(log n)$ time complexity by eliminating half the search space in each iteration. Curabitur aliquet quam id dui posuere blandit.
 ])
 
@@ -144,7 +144,7 @@ int partition(int arr[], int low, int high) {
 }
 ```
 
-#example("Master Theorem Application", [
+#box(theme: "example", title: "Master Theorem Application", [
   Vestibulum ante ipsum primis in faucibus orci _luctus et ultrices posuere cubilia curae_. For recurrences of the form $T(n) = a T(n / b) + f(n)$:
   
   1. If $f(n) = O(n^(log_b a - epsilon))$ for some $epsilon > 0$, then $T(n) = Theta(n^(log_b a))$
@@ -191,7 +191,7 @@ function dijkstra(graph, start) {
 }
 ```
 
-#aside("Historical Context", [
+#box(theme: "aside", title: "Historical Context", [
   Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Edsger Dijkstra developed this algorithm in 1956. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
 ])
 
@@ -203,7 +203,7 @@ $ T(n) = O(E log V) $
 
 Where $E$ represents edges and $V$ represents vertices. Nulla porttitor accumsan tincidunt. The #gls("greedy-approach") is employed here.
 
-#example("Greedy Algorithms", [
+#box(title: "Greedy Algorithms", [
   Donec rutrum congue leo eget malesuada. Both Kruskal's and Prim's algorithms use the greedy approach:
   
   - At each step, make the locally optimal choice
@@ -236,7 +236,7 @@ def lcs(X, Y):
 
 Nulla porttitor accumsan tincidunt. Space complexity can be _optimized_ to $O(min(m,n))$ using rolling arrays. This demonstrates #gls("optimal-substructure").
 
-#important("Optimal Substructure", [
+#box(theme: "example", title: "Optimal Substructure", [
   Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. A problem exhibits optimal substructure if an optimal solution can be constructed from optimal solutions of its subproblems. Pellentesque in ipsum id orci porta dapibus.
 ])
 
@@ -248,7 +248,7 @@ $ K(i, w) = max(K(i-1, w), v_i + K(i-1, w - w_i)) $
 
 Proin eget tortor risus, where $v_i$ is value and $w_i$ is weight of item $i$.
 
-#example("0/1 Knapsack Implementation", [
+#box(title: "0/1 Knapsack Implementation", [
   Lorem ipsum dolor sit amet, consectetur adipiscing elit:
   
   ```python
