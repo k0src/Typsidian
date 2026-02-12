@@ -102,6 +102,7 @@ _Left: `theme: "light"`, Right: `theme: "dark"`_
 - `hr(pad, dash, cap)` - Generates horizontal rule.
   - <details>
     <summary>Parameters</summary>
+    
     - `pad` - Vertical padding above and below the line.
     - `dash` - Line style pattern. Takes a string: `"solid"`, `"dotted"`, `"densely-dotted"`, `"loosely-dotted"`, `"dashed"`, `"densely-dashed"`, or `"loosely-dashed"`. Default: `"solid"`
     - `cap` - Line end cap style. Takes a string: `"round"`, `"square"`, or `"butt"`. Default: `"round"`
