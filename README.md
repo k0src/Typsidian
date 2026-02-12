@@ -54,6 +54,7 @@ _Left: `theme: "light"`, Right: `theme: "dark"`_
 - `c(code, lang)` - Inline code with background color.
   - <details>
     <summary>Parameters</summary>
+
     - `code` - The code text to display.
     - `lang` - Language for syntax highlighting. Default: `"text"`.
 
@@ -62,6 +63,7 @@ _Left: `theme: "light"`, Right: `theme: "dark"`_
 - `make-title(show-outline, show-underline: true, show-author, justify)` - Generates title heading.
   - <details>
     <summary>Parameters</summary>
+
     - `show-outline` - Whether to display the document outline below the title.
     - `show-underline` - Whether to show an underline under the title.
     - `show-author` - Whether to display the author name and date.
@@ -72,6 +74,7 @@ _Left: `theme: "light"`, Right: `theme: "dark"`_
 - `section-title(title: "", subtitle: none, justify: "center", underline: false, icon: none)` - Generates a section title.
   - <details>
     <summary>Parameters</summary>
+
     - `title` - The main section title text.
     - `subtitle` - Optional subtitle text below the main title.
     - `justify` - Alignment of the section title. Takes a string: `"center"`, `"left"`, or `"right"`. Default: `"center"`.
@@ -83,6 +86,7 @@ _Left: `theme: "light"`, Right: `theme: "dark"`_
 - `box(theme, title, breakable, body, box-radius, box-thickness, icon, footer, inset)` - Creates a themed callout box.
   - <details>
     <summary>Parameters</summary>
+
     - `theme` - Box theme. Takes a string: `"basic"`, `"info"`, `"important"`, `"example"`, `"aside"`, `"definition"`, `"frame"`, or `"highlight"`. Default: `"basic"`
     - `title` - Optional title for the box header.
     - `breakable` - Whether the box can break across pages. Default: `false`
@@ -107,6 +111,7 @@ _Left: `theme: "light"`, Right: `theme: "dark"`_
 - `term(word, definition, pronunciation)` - Creates a term and definition block.
   - <details>
     <summary>Parameters</summary>
+
     - `word` - The word text.
     - `definition` - The definition text.
     - `pronunciation` - Optional pronunciation for the word.
@@ -116,6 +121,7 @@ _Left: `theme: "light"`, Right: `theme: "dark"`_
 - `note(icon, color, body)` - Creates quick note box with custom icon.
   - <details>
     <summary>Parameters</summary>
+
     - `icon` - Font Awesome icon to display at the start of the note. Default: `fa-note-sticky()`
     - `color` - Color of the note's accent.
     - `body` - The content of the note.
@@ -125,6 +131,7 @@ _Left: `theme: "light"`, Right: `theme: "dark"`_
 - `qa(question, answer)` - Question and answer pair block.
   - <details>
     <summary>Parameters</summary>
+    
     - `question` - The question text.
     - `answer` - The answer text.
 
