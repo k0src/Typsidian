@@ -1,6 +1,10 @@
-#import "@preview/typsidian:0.0.2": *
+#import "@preview/typsidian:0.0.3": *
 
-#show: typsidian.with(theme: "light", title: "My Document", course: "CS4999")
+#show: typsidian.with(
+  title: "My Document", 
+  course: "My Course",
+  author: "Author Name"
+)
 
 #make-title()
 

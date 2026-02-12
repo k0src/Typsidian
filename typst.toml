@@ -1,10 +1,10 @@
 [package]
 name = "typsidian"
-version = "0.0.2"
+version = "0.0.3"
 entrypoint = "lib.typ"
 authors = ["@k0src"]
 license = "MIT"
-description = "Modern note-taking, outlining, and knowledge management."
+description = "A modern note-taking, outlining, and knowledge management template."
 repository = "https://github.com/k0src/Typsidian"
 keywords = ["Obsidian", "notes", "study", "outline", "university"]
 categories = ["report", "components"]
